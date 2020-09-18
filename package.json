@@ -1,0 +1,23 @@
+{
+  "name": "rimac-aws-lambda-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "invoke-hello": "sls invoke local -f hello",
+    "deploy": "sls deploy --stage dev --verbose",
+    "debug": "set SLS_DEBUG=* && node --inspect-brk node_modules/serverless/bin/serverless offline -s  desa --local true --noTimeout --verbose"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swapi-node": "^0.6.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.755.0",
+    "serverless": "^2.1.1",
+    "serverless-offline": "^6.7.0"
+  }
+}
